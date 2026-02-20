@@ -11,47 +11,115 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Free Events in Major US Cities</title>
+    <title>Free Events USA — Discover free things to do in 12 major cities</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #f8fafc; color: #0f172a; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        .header { 
-            background: linear-gradient(135deg, #1e2b4f 0%, #2a3f6e 50%, #b22234 100%);
-            color: white; 
-            padding: 3rem 1.5rem; 
-            text-align: center; 
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+        
+        /* Modern header with hero section */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: white;
+            padding: 4rem 1.5rem;
+            text-align: center;
             position: relative;
             overflow: hidden;
         }
-        .header::before {
+        
+        .hero::before {
             content: "🇺🇸";
             position: absolute;
-            font-size: 15rem;
-            opacity: 0.1;
-            bottom: -2rem;
+            font-size: 20rem;
+            opacity: 0.03;
+            bottom: -4rem;
             right: -2rem;
             transform: rotate(15deg);
         }
-        .header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.75rem; position: relative; }
-        .header p { font-size: 1.2rem; opacity: 0.95; max-width: 600px; margin: 0 auto 1rem; position: relative; }
-        .update-badge {
-            background: rgba(255,255,255,0.15);
+        
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #ef4444, #3b82f6);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            position: relative;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            font-weight: 300;
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+        
+        .hero-stat {
+            background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
-            padding: 0.5rem 1.5rem;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            display: inline-block;
-            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 40px;
+            font-size: 1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .hero-stat span {
+            font-weight: 700;
+            color: #fbbf24;
+        }
+        
+        /* City filter tabs - modern pill design */
+        .city-section {
+            max-width: 1200px;
+            margin: 2rem auto 1rem;
+            padding: 0 1.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .city-tabs {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
             gap: 0.75rem;
-            margin: 2rem 1rem;
+            margin-bottom: 2rem;
         }
+        
         .city-btn {
             padding: 0.75rem 1.5rem;
             border: none;
@@ -61,77 +129,87 @@
             font-weight: 600;
             cursor: pointer;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            transition: all 0.2s;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             border: 1px solid #e2e8f0;
             color: #334155;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
+        
         .city-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 24px -8px rgba(0,40,104,0.2);
-            border-color: #b22234;
-            color: #b22234;
+            box-shadow: 0 12px 24px -8px rgba(37, 99, 235, 0.3);
+            border-color: #3b82f6;
+            color: #1e3a8a;
         }
+        
         .city-btn.active {
-            background: #b22234;
+            background: #2563eb;
             color: white;
-            border-color: #b22234;
+            border-color: #2563eb;
+            box-shadow: 0 12px 24px -8px rgba(37, 99, 235, 0.4);
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 1.5rem 3rem;
-        }
-        
-        .ad {
-            background: linear-gradient(135deg, #f1f5f9 0%, #e6edf5 100%);
-            padding: 2rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 24px;
-            border: 1px dashed #94a3b8;
-            color: #475569;
-            font-weight: 500;
-        }
-        
+        /* Events grid - modern card layout */
         .events-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1.5rem;
-            margin: 2rem 0;
+            margin-top: 1.5rem;
         }
         
         .event-card {
             background: white;
-            border-radius: 24px;
-            padding: 1.75rem;
-            box-shadow: 0 12px 36px -12px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-            border: 1px solid #eef2f6;
-            position: relative;
+            border-radius: 20px;
             overflow: hidden;
-        }
-        .event-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 24px 48px -16px rgba(0,40,104,0.2);
-            border-color: #b22234;
+            box-shadow: 0 12px 36px -12px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
         
-        .city-tag {
-            display: inline-block;
-            padding: 0.4rem 1rem;
+        .event-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 24px 48px -16px rgba(0,0,0,0.2);
+            border-color: #94a3b8;
+        }
+        
+        .card-header {
+            padding: 1.5rem 1.5rem 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .city-badge {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 0.25rem 1rem;
             border-radius: 40px;
             font-size: 0.8rem;
-            font-weight: 700;
-            margin-bottom: 1.2rem;
-            background: #f1f5f9;
-            color: #1e2b4f;
-            border: 1px solid #e2e8f0;
+            font-weight: 600;
+            display: inline-block;
+            letter-spacing: 0.3px;
+        }
+        
+        .category-icon {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+        
+        .card-content {
+            padding: 0.5rem 1.5rem 1rem;
+            flex-grow: 1;
         }
         
         .event-title {
-            font-size: 1.35rem;
+            font-size: 1.25rem;
             font-weight: 700;
+            line-height: 1.4;
             margin-bottom: 0.75rem;
             color: #0f172a;
         }
@@ -142,111 +220,230 @@
             gap: 0.5rem;
             margin-bottom: 1rem;
             color: #475569;
+            font-size: 0.9rem;
         }
         
-        .event-desc {
-            color: #334155;
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .event-description {
+            color: #475569;
             font-size: 0.95rem;
             line-height: 1.6;
-            margin-bottom: 1.5rem;
-            flex-grow: 1;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .card-footer {
+            padding: 1rem 1.5rem 1.5rem;
+            margin-top: auto;
         }
         
         .event-link {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.5rem;
-            background: #1e2b4f;
+            background: #0f172a;
             color: white;
-            padding: 0.9rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 40px;
             text-decoration: none;
+            font-size: 0.9rem;
             font-weight: 600;
             transition: all 0.2s;
-        }
-        .event-link:hover {
-            background: #b22234;
-            transform: scale(1.02);
+            width: 100%;
+            border: 1px solid #0f172a;
         }
         
-        .footer {
+        .event-link:hover {
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+        
+        /* Ad blocks */
+        .ad-container {
+            margin: 2rem 0;
+        }
+        
+        .ad-block {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 2rem;
             text-align: center;
+            border-radius: 20px;
+            border: 2px dashed #94a3b8;
+            color: #475569;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ad-block::before {
+            content: "📢";
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.1;
+            bottom: -0.5rem;
+            right: 0;
+            transform: rotate(-10deg);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            color: #cbd5e1;
             padding: 3rem 1.5rem 2rem;
-            color: #64748b;
-            border-top: 1px solid #e2e8f0;
-            margin-top: 3rem;
+            margin-top: 4rem;
+            border-radius: 40px 40px 0 0;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
         }
         
         .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 1.5rem 0;
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
         }
         
         .footer-links a {
-            color: #475569;
+            color: #cbd5e1;
             text-decoration: none;
+            transition: color 0.2s;
         }
+        
         .footer-links a:hover {
-            color: #b22234;
+            color: white;
             text-decoration: underline;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #334155;
+            font-size: 0.9rem;
         }
         
         .loading {
             text-align: center;
             padding: 4rem;
             color: #64748b;
+            grid-column: 1 / -1;
+        }
+        
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+            
+            .events-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🎟️ Free Events in the USA</h1>
-        <p>Discover free concerts, museum days, festivals & outdoor activities across 12 major cities</p>
-        <div class="update-badge">🔄 Updated daily • 100% free • Since 2026</div>
+    <div class="hero">
+        <h1>🎟️ Free Events USA</h1>
+        <p>Discover 100% free museums, parks, beaches & attractions in 12 major American cities</p>
+        <div class="hero-stats">
+            <div class="hero-stat"><span>67+</span> free places</div>
+            <div class="hero-stat"><span>12</span> cities</div>
+            <div class="hero-stat"><span>Updated</span> daily</div>
+        </div>
     </div>
     
-    <div class="city-tabs" id="cityTabs">
-        <button class="city-btn active" onclick="filterCity('all')">🌟 All Cities</button>
-        <button class="city-btn" onclick="filterCity('New York')">🗽 New York</button>
-        <button class="city-btn" onclick="filterCity('Los Angeles')">🎬 Los Angeles</button>
-        <button class="city-btn" onclick="filterCity('Chicago')">🌆 Chicago</button>
-        <button class="city-btn" onclick="filterCity('Houston')">🚀 Houston</button>
-        <button class="city-btn" onclick="filterCity('Phoenix')">🌵 Phoenix</button>
-        <button class="city-btn" onclick="filterCity('Philadelphia')">🏛️ Philadelphia</button>
-        <button class="city-btn" onclick="filterCity('San Antonio')">🏰 San Antonio</button>
-        <button class="city-btn" onclick="filterCity('San Diego')">🌊 San Diego</button>
-        <button class="city-btn" onclick="filterCity('Dallas')">🤠 Dallas</button>
-        <button class="city-btn" onclick="filterCity('San Jose')">💻 San Jose</button>
-        <button class="city-btn" onclick="filterCity('Austin')">🎸 Austin</button>
-        <button class="city-btn" onclick="filterCity('Jacksonville')">🏖️ Jacksonville</button>
-    </div>
-    
-    <div class="container">
-        <div class="ad">
-            📢 Advertisement — Your brand could be here (Google AdSense)
+    <div class="city-section">
+        <div class="section-title">
+            <span>📍 Choose a city</span>
+        </div>
+        <div class="city-tabs" id="cityTabs">
+            <button class="city-btn active" onclick="filterCity('all')">🌟 All Cities</button>
+            <button class="city-btn" onclick="filterCity('New York')">🗽 New York</button>
+            <button class="city-btn" onclick="filterCity('Los Angeles')">🎬 Los Angeles</button>
+            <button class="city-btn" onclick="filterCity('Chicago')">🌆 Chicago</button>
+            <button class="city-btn" onclick="filterCity('Houston')">🚀 Houston</button>
+            <button class="city-btn" onclick="filterCity('Phoenix')">🌵 Phoenix</button>
+            <button class="city-btn" onclick="filterCity('Philadelphia')">🏛️ Philadelphia</button>
+            <button class="city-btn" onclick="filterCity('San Antonio')">🏰 San Antonio</button>
+            <button class="city-btn" onclick="filterCity('San Diego')">🌊 San Diego</button>
+            <button class="city-btn" onclick="filterCity('Dallas')">🤠 Dallas</button>
+            <button class="city-btn" onclick="filterCity('San Jose')">💻 San Jose</button>
+            <button class="city-btn" onclick="filterCity('Austin')">🎸 Austin</button>
+            <button class="city-btn" onclick="filterCity('Jacksonville')">🏖️ Jacksonville</button>
+        </div>
+        
+        <div class="ad-container">
+            <div class="ad-block">
+                📢 Advertisement — Your brand could be here
+            </div>
         </div>
         
         <div id="events" class="events-grid">
-            <div class="loading">Loading free events...</div>
+            <div class="loading">Loading free places...</div>
         </div>
         
-        <div class="ad">
-            📢 Advertisement — Your brand could be here (Google AdSense)
+        <div class="ad-container">
+            <div class="ad-block">
+                📢 Advertisement — Your brand could be here
+            </div>
         </div>
     </div>
     
     <div class="footer">
-        <div class="footer-links">
-            <a href="https://evgen-ekb-92.github.io/about.html">About</a>
-            <a href="https://evgen-ekb-92.github.io/contact.html">Contact</a>
-            <a href="https://evgen-ekb-92.github.io/privacy.html">Privacy</a>
-            <a href="https://evgen-ekb-92.github.io/terms.html">Terms</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Free Events USA</h4>
+                <p>Your guide to free experiences across America. 100% free, updated daily.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/privacy.html">Privacy</a></li>
+                    <li><a href="/terms.html">Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Reddit</a></li>
+                </ul>
+            </div>
         </div>
-        <p>✅ All events are completely free and verified daily</p>
-        <p>📅 2026 events • Click "Get Details" for official information</p>
-        <p style="margin-top: 2rem;">© 2026 FreeEventsUSA</p>
+        <div class="footer-bottom">
+            <p>© 2026 FreeEventsUSA — All events are free to the public</p>
+        </div>
     </div>
 
     <script>
@@ -261,8 +458,27 @@
             })
             .catch(error => {
                 console.log('Error:', error);
-                document.getElementById('events').innerHTML = '<div class="loading">Unable to load events. Please refresh.</div>';
+                document.getElementById('events').innerHTML = '<div class="loading">😕 Unable to load events. Please refresh.</div>';
             });
+        
+        function getCategoryIcon(category) {
+            const icons = {
+                'museum': '🏛️',
+                'park': '🌳',
+                'outdoor': '🌲',
+                'beach': '🏖️',
+                'history': '📜',
+                'zoo': '🦁',
+                'attraction': '🎯',
+                'nature': '🌸',
+                'entertainment': '🎭',
+                'food': '🍽️',
+                'market': '🛍️',
+                'sports': '⚽',
+                'default': '📍'
+            };
+            return icons[category] || icons.default;
+        }
         
         function displayEvents(city) {
             const container = document.getElementById('events');
@@ -272,22 +488,31 @@
                 : allEvents.filter(e => e.city === city);
             
             if (filtered.length === 0) {
-                container.innerHTML = '<div class="loading">No events in this city at the moment</div>';
+                container.innerHTML = '<div class="loading">😕 No free places in this city at the moment</div>';
                 return;
             }
             
             let html = '';
             filtered.forEach(event => {
+                const icon = getCategoryIcon(event.category);
+                
                 html += `
                     <div class="event-card">
-                        <span class="city-tag">🇺🇸 ${event.city}</span>
-                        <h3 class="event-title">${event.title}</h3>
-                        <div class="event-meta">
-                            <div>📅 ${event.date}</div>
-                            <div>📍 ${event.place}</div>
+                        <div class="card-header">
+                            <span class="city-badge">${event.city}</span>
+                            <span class="category-icon">${icon}</span>
                         </div>
-                        <p class="event-desc">${event.desc}</p>
-                        <a href="${event.source}" class="event-link" target="_blank">🔗 Get Details</a>
+                        <div class="card-content">
+                            <h3 class="event-title">${event.title}</h3>
+                            <div class="event-meta">
+                                <div class="meta-item">📅 ${event.date}</div>
+                                <div class="meta-item">📍 ${event.place}</div>
+                            </div>
+                            <p class="event-description">${event.desc}</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="${event.source}" class="event-link" target="_blank">🔗 Get Details</a>
+                        </div>
                     </div>
                 `;
             });
