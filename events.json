@@ -1,192 +1,390 @@
 [
   {
-    "title": "The Metropolitan Museum of Art - Pay What You Wish",
-    "date": "Daily for NY residents, others suggested donation",
-    "place": "The Met Fifth Avenue, 1000 5th Ave, New York",
-    "desc": "Suggested admission $30, but you pay what you wish. Free for all children under 12.",
-    "source": "https://www.metmuseum.org/",
-    "city": "New York",
-    "category": "museum"
-  },
-  {
-    "title": "Whitney Museum - Free Friday Nights",
-    "date": "Fridays, 7:00-10:00 PM",
-    "place": "Whitney Museum, 99 Gansevoort St, New York",
-    "desc": "Pay-what-you-wish admission every Friday evening. Suggested donation $20, but you can pay any amount.",
-    "source": "https://whitney.org/",
-    "city": "New York",
-    "category": "museum"
-  },
-  {
-    "title": "Brooklyn Museum - First Saturday",
-    "date": "First Saturday of each month, 5:00-11:00 PM",
-    "place": "Brooklyn Museum, 200 Eastern Pkwy, Brooklyn",
-    "desc": "Free admission, live music, dance parties, and art-making activities. Very popular!",
-    "source": "https://www.brooklynmuseum.org/",
-    "city": "New York",
-    "category": "museum"
-  },
-  {
     "title": "Staten Island Ferry",
     "date": "Daily, 24 hours",
-    "place": "Whitehall Terminal, Manhattan to St. George, Staten Island",
-    "desc": "Completely free ferry with stunning views of the Statue of Liberty and NYC skyline.",
+    "place": "Whitehall Terminal, Manhattan to St. George",
+    "desc": "Completely free ferry with stunning views of the Statue of Liberty and NYC skyline. Runs 24/7, no tickets needed.",
     "source": "https://siferry.com/",
     "city": "New York",
     "category": "outdoor"
   },
   {
-    "title": "Getty Center - Free Admission",
-    "date": "Daily, 10:00 AM-5:30 PM",
-    "place": "Getty Center, 1200 Getty Center Dr, Los Angeles",
-    "desc": "Free admission to museum with stunning city views and art collections. Parking fee applies.",
+    "title": "The High Line",
+    "date": "Daily, 7:00 AM-10:00 PM",
+    "place": "Gansevoort St to 34th St, Manhattan",
+    "desc": "Free public park built on a historic freight rail line elevated above the streets. Art installations and gardens.",
+    "source": "https://www.thehighline.org/",
+    "city": "New York",
+    "category": "park"
+  },
+  {
+    "title": "Central Park",
+    "date": "Daily, 6:00 AM-1:00 AM",
+    "place": "Central Park, Manhattan",
+    "desc": "Free access to one of the world's most famous parks. Walking paths, lakes, and free events year-round.",
+    "source": "https://www.centralpark.com/",
+    "city": "New York",
+    "category": "park"
+  },
+  {
+    "title": "Brooklyn Bridge",
+    "date": "Daily, 24 hours",
+    "place": "Brooklyn Bridge, Manhattan to Brooklyn",
+    "desc": "Walk or bike across this historic bridge for free. Pedestrian walkway always open. Best before 9am to avoid crowds.",
+    "source": "https://www.nyc.gov/",
+    "city": "New York",
+    "category": "outdoor"
+  },
+  {
+    "title": "New York Public Library",
+    "date": "Mon-Sat 10am-6pm, Sun 1pm-5pm",
+    "place": "Stephen A. Schwarzman Building, 5th Ave at 42nd St",
+    "desc": "Visit the iconic Rose Main Reading Room and see free exhibitions including the Polonsky Exhibition of Library Treasures.",
+    "source": "https://www.nypl.org/",
+    "city": "New York",
+    "category": "museum"
+  },
+  {
+    "title": "Federal Hall",
+    "date": "Daily, 9:00 AM-5:00 PM",
+    "place": "Federal Hall, 26 Wall St",
+    "desc": "Free museum at the site where George Washington took the oath of office. Run by National Park Service.",
+    "source": "https://www.nps.gov/feha/",
+    "city": "New York",
+    "category": "history"
+  },
+  {
+    "title": "Governors Island",
+    "date": "May-Oct, ferry from Manhattan",
+    "place": "Governors Island, NYC Harbor",
+    "desc": "Free ferry on weekends, free island access with historic forts, art installations, and hammocks.",
+    "source": "https://www.govisland.com/",
+    "city": "New York",
+    "category": "park"
+  },
+  {
+    "title": "Griffith Observatory",
+    "date": "Tue-Fri 12-10pm, Sat-Sun 10am-10pm",
+    "place": "2800 E Observatory Rd, Los Angeles",
+    "desc": "Free admission to one of LA's most iconic spots. See the city from above, explore space exhibits, and use public telescopes at night.",
+    "source": "https://griffithobservatory.org/",
+    "city": "Los Angeles",
+    "category": "museum"
+  },
+  {
+    "title": "Getty Center",
+    "date": "Tue-Sun 10am-5:30pm (Sat until 8pm)",
+    "place": "1200 Getty Center Dr, Los Angeles",
+    "desc": "Free admission to world-class art museum with stunning architecture and gardens. Parking fee applies ($20).",
     "source": "https://www.getty.edu/",
     "city": "Los Angeles",
     "category": "museum"
   },
   {
-    "title": "Natural History Museum - Free Tuesdays",
-    "date": "First Tuesday of month",
-    "place": "Natural History Museum, 900 Exposition Blvd, Los Angeles",
-    "desc": "Free admission for all visitors on the first Tuesday of every month.",
-    "source": "https://nhm.org/",
+    "title": "Hollywood Walk of Fame",
+    "date": "Daily, 24 hours",
+    "place": "Hollywood Blvd between Gower and La Brea",
+    "desc": "See over 2,700 stars honoring celebrities. Free self-guided walking tour of Hollywood history.",
+    "source": "https://walkoffame.com/",
     "city": "Los Angeles",
-    "category": "museum"
+    "category": "attraction"
   },
   {
-    "title": "Hammer Museum - Free Admission",
-    "date": "Daily, 11:00 AM-6:00 PM (Thu until 8:30 PM)",
-    "place": "Hammer Museum, 10899 Wilshire Blvd, Los Angeles",
-    "desc": "Completely free contemporary art museum. No reservation needed.",
-    "source": "https://hammer.ucla.edu/",
-    "city": "Los Angeles",
-    "category": "museum"
-  },
-  {
-    "title": "Griffith Park & Observatory",
+    "title": "Venice Beach Boardwalk",
     "date": "Daily, sunrise to sunset",
-    "place": "Griffith Observatory, Los Angeles",
-    "desc": "Free hiking trails and free admission to the observatory. Parking is limited.",
-    "source": "https://griffithobservatory.org/",
+    "place": "Venice Beach, Los Angeles",
+    "desc": "Iconic boardwalk with street performers, skate park, muscle beach, and people watching. Completely free.",
+    "source": "https://www.veniceboardwalk.org/",
+    "city": "Los Angeles",
+    "category": "beach"
+  },
+  {
+    "title": "Runyon Canyon Park",
+    "date": "Daily, sunrise to sunset",
+    "place": "2000 N Fuller Ave, Los Angeles",
+    "desc": "Famous hiking spot with stunning city views. Free parking and trails for all levels. Popular with celebrities.",
+    "source": "https://runyoncanyon.la/",
     "city": "Los Angeles",
     "category": "outdoor"
   },
   {
-    "title": "Art Institute of Chicago - Free for Illinois Residents",
-    "date": "Thursdays 5:00-8:00 PM",
-    "place": "Art Institute of Chicago, 111 S Michigan Ave",
-    "desc": "Free evening admission for Illinois residents. Proof of residency required.",
-    "source": "https://www.artic.edu/",
+    "title": "Exposition Park Rose Garden",
+    "date": "Daily 9am-sunset",
+    "place": "701 State Dr, Los Angeles",
+    "desc": "7-acre public rose garden with over 200 varieties. Free and beautiful year-round.",
+    "source": "https://parks.lacounty.gov/",
+    "city": "Los Angeles",
+    "category": "park"
+  },
+  {
+    "title": "Millennium Park",
+    "date": "Daily, 6am-11pm",
+    "place": "201 E Randolph St, Chicago",
+    "desc": "Home of 'The Bean' (Cloud Gate) sculpture, Crown Fountain, and free summer concerts at Jay Pritzker Pavilion.",
+    "source": "https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park.html",
     "city": "Chicago",
-    "category": "museum"
+    "category": "park"
   },
   {
     "title": "Lincoln Park Zoo",
-    "date": "Daily, 10:00 AM-5:00 PM",
-    "place": "Lincoln Park Zoo, 2001 N Clark St, Chicago",
-    "desc": "One of the oldest free zoos in the US. Completely free, year-round.",
+    "date": "Daily, 10am-5pm (extended summer hours)",
+    "place": "2001 N Clark St, Chicago",
+    "desc": "One of the oldest free zoos in the US. See lions, polar bears, gorillas and more. Completely free, year-round.",
     "source": "https://www.lpzoo.org/",
     "city": "Chicago",
     "category": "zoo"
   },
   {
-    "title": "Millennium Park Summer Music",
-    "date": "Monday/Thursday evenings, June-August",
-    "place": "Jay Pritzker Pavilion, Millennium Park, Chicago",
-    "desc": "Free concerts featuring Chicago Symphony Orchestra and other artists.",
-    "source": "https://www.chicago.gov/",
+    "title": "Chicago Cultural Center",
+    "date": "Daily, 10am-5pm",
+    "place": "78 E Washington St, Chicago",
+    "desc": "Stunning building with world's largest stained glass Tiffany dome. Free art exhibitions and concerts.",
+    "source": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_culturalcenter.html",
     "city": "Chicago",
-    "category": "music"
+    "category": "museum"
   },
   {
-    "title": "Navy Pier Fireworks",
-    "date": "Wednesdays and Saturdays at 9:00 PM (summer)",
-    "place": "Navy Pier, Chicago",
-    "desc": "Free fireworks displays over Lake Michigan during summer.",
+    "title": "Navy Pier",
+    "date": "Daily, hours vary by season",
+    "place": "600 E Grand Ave, Chicago",
+    "desc": "Free fireworks on Wednesdays and Saturdays in summer. Lakefront views, gardens, and people watching.",
     "source": "https://navypier.org/",
     "city": "Chicago",
     "category": "entertainment"
   },
   {
-    "title": "Houston Museum of Natural Science - Free Thursdays",
-    "date": "Thursdays 2:00-5:00 PM",
-    "place": "HMNS, 5555 Hermann Park Dr, Houston",
-    "desc": "Free admission to permanent exhibits for all visitors.",
-    "source": "https://www.hmns.org/",
-    "city": "Houston",
+    "title": "Lakefront Trail",
+    "date": "Daily, 24 hours",
+    "place": "Stretches 18 miles along Lake Michigan",
+    "desc": "Free walking and biking path with stunning lake views. Connects beaches, parks, and neighborhoods.",
+    "source": "https://www.chicagoparkdistrict.com/",
+    "city": "Chicago",
+    "category": "outdoor"
+  },
+  {
+    "title": "Garfield Park Conservatory",
+    "date": "Tue-Sun 10am-5pm (Wed until 8pm)",
+    "place": "300 N Central Park Ave, Chicago",
+    "desc": "One of the largest conservatories in the US. Free admission to desert house, fern room, and seasonal flower shows.",
+    "source": "https://garfieldconservatory.org/",
+    "city": "Chicago",
+    "category": "nature"
+  },
+  {
+    "title": "National Museum of Mexican Art",
+    "date": "Tue-Sun 10am-5pm",
+    "place": "1852 W 19th St, Chicago",
+    "desc": "Largest Latino cultural organization in the US. Always free admission to permanent and rotating exhibits.",
+    "source": "https://nationalmuseumofmexicanart.org/",
+    "city": "Chicago",
     "category": "museum"
   },
   {
-    "title": "Menil Collection",
-    "date": "Daily, 11:00 AM-7:00 PM (Closed Tue)",
-    "place": "Menil Collection, 1533 Sul Ross St, Houston",
-    "desc": "World-class art museum with completely free admission. Parking also free.",
+    "title": "Hermann Park",
+    "date": "Daily, 6am-11pm",
+    "place": "6001 Fannin St, Houston",
+    "desc": "445-acre urban oasis with Japanese Garden, walking trails, and free outdoor performances at Miller Outdoor Theatre.",
+    "source": "https://www.hermannpark.org/",
+    "city": "Houston",
+    "category": "park"
+  },
+  {
+    "title": "The Menil Collection",
+    "date": "Wed-Sun 11am-7pm",
+    "place": "1533 Sul Ross St, Houston",
+    "desc": "World-class art museum with works from Paleolithic to contemporary. Always free. Parking also free.",
     "source": "https://www.menil.org/",
     "city": "Houston",
     "category": "museum"
   },
   {
-    "title": "Desert Botanical Garden - Free Days",
-    "date": "2nd Tuesday of month, select Mondays",
-    "place": "Desert Botanical Garden, 1201 N Galvin Pkwy, Phoenix",
-    "desc": "Free admission for Arizona residents on designated days. Check website.",
-    "source": "https://dbg.org/",
-    "city": "Phoenix",
-    "category": "nature"
+    "title": "Discovery Green",
+    "date": "Daily, 6am-11pm",
+    "place": "1500 McKinney St, Houston",
+    "desc": "12-acre downtown park with interactive fountains, art installations, and free events like yoga and outdoor movies.",
+    "source": "https://www.discoverygreen.com/",
+    "city": "Houston",
+    "category": "park"
   },
   {
-    "title": "Phoenix Art Museum - Free Wednesdays",
-    "date": "Wednesdays 3:00-9:00 PM",
-    "place": "Phoenix Art Museum, 1625 N Central Ave",
-    "desc": "Free admission for all visitors on Wednesday evenings.",
+    "title": "Buffalo Bayou Park",
+    "date": "Daily, 6am-11pm",
+    "place": "1800 Allen Pkwy, Houston",
+    "desc": "160-acre park with hiking trails, skyline views, and nightly bat colony emergence under Waugh Drive Bridge.",
+    "source": "https://buffalobayou.org/",
+    "city": "Houston",
+    "category": "park"
+  },
+  {
+    "title": "Gerald D. Hines Waterwall",
+    "date": "Daily, 8am-10pm",
+    "place": "2800 Post Oak Blvd, Houston",
+    "desc": "64-foot semi-circular fountain recirculating 11,000 gallons per minute. Iconic Houston landmark.",
+    "source": "https://www.uptown-houston.com/",
+    "city": "Houston",
+    "category": "attraction"
+  },
+  {
+    "title": "Camelback Mountain",
+    "date": "Daily, sunrise to sunset",
+    "place": "Camelback Mountain, Phoenix",
+    "desc": "Famous hiking trails (Echo Canyon and Cholla) with stunning city views. Free but challenging.",
+    "source": "https://www.phoenix.gov/parks/trails/locations/camelback-mountain",
+    "city": "Phoenix",
+    "category": "outdoor"
+  },
+  {
+    "title": "South Mountain Park",
+    "date": "Daily, 5am-10pm",
+    "place": "10919 S Central Ave, Phoenix",
+    "desc": "One of the largest municipal parks in the US with 50+ miles of trails. Free entry.",
+    "source": "https://www.phoenix.gov/parks/trails/locations/south-mountain",
+    "city": "Phoenix",
+    "category": "park"
+  },
+  {
+    "title": "Arizona Capitol Museum",
+    "date": "Mon-Fri 9am-4pm, Sat 10am-2pm",
+    "place": "1700 W Washington St, Phoenix",
+    "desc": "Free museum in the historic capitol building. Learn about Arizona's history from territorial days to present.",
+    "source": "https://azlibrary.gov/state-capitol-museum",
+    "city": "Phoenix",
+    "category": "museum"
+  },
+  {
+    "title": "Phoenix Art Museum",
+    "date": "Wednesdays 3pm-9pm",
+    "place": "1625 N Central Ave, Phoenix",
+    "desc": "Free admission to permanent collection on Wednesday evenings. One of the largest art museums in the Southwest.",
     "source": "https://phxart.org/",
     "city": "Phoenix",
     "category": "museum"
   },
   {
-    "title": "Philadelphia Museum of Art - Pay What You Wish",
-    "date": "First Sunday of month, Wednesdays after 5:00 PM",
-    "place": "Philadelphia Museum of Art, 2600 Benjamin Franklin Pkwy",
-    "desc": "Pay what you wish (suggested $1+). First Sundays also feature special activities.",
+    "title": "Desert Botanical Garden",
+    "date": "2nd Tuesday of month",
+    "place": "1201 N Galvin Pkwy, Phoenix",
+    "desc": "Free admission for Arizona residents on the second Tuesday of each month. Limited tickets available.",
+    "source": "https://dbg.org/",
+    "city": "Phoenix",
+    "category": "nature"
+  },
+  {
+    "title": "Papago Park",
+    "date": "Daily, sunrise to sunset",
+    "place": "625 N Galvin Pkwy, Phoenix",
+    "desc": "Hole-in-the-Rock hiking trail, lagoons, and picnic areas. Free access.",
+    "source": "https://www.phoenix.gov/parks/trails/locations/papago-park",
+    "city": "Phoenix",
+    "category": "park"
+  },
+  {
+    "title": "Philadelphia Museum of Art",
+    "date": "First Sunday of month, Wednesdays after 5pm",
+    "place": "2600 Benjamin Franklin Pkwy, Philadelphia",
+    "desc": "Pay-what-you-wish admission on First Sundays and Wednesday evenings. Famous for the 'Rocky Steps'.",
     "source": "https://philamuseum.org/",
     "city": "Philadelphia",
     "category": "museum"
   },
   {
-    "title": "Barnes Foundation - Free First Sunday",
+    "title": "Barnes Foundation",
     "date": "First Sunday of month",
-    "place": "Barnes Foundation, 2025 Benjamin Franklin Pkwy, Philadelphia",
-    "desc": "Free admission to one of the world's finest art collections on First Sundays.",
+    "place": "2025 Benjamin Franklin Pkwy, Philadelphia",
+    "desc": "Free admission to one of the world's finest art collections on First Sundays. Free tickets required.",
     "source": "https://www.barnesfoundation.org/",
     "city": "Philadelphia",
     "category": "museum"
   },
   {
+    "title": "Independence Hall",
+    "date": "Daily, 9am-5pm",
+    "place": "520 Chestnut St, Philadelphia",
+    "desc": "Birthplace of the Declaration of Independence and Constitution. Free timed entry tickets required.",
+    "source": "https://www.nps.gov/inde/",
+    "city": "Philadelphia",
+    "category": "history"
+  },
+  {
+    "title": "Liberty Bell",
+    "date": "Daily, 9am-5pm",
+    "place": "526 Market St, Philadelphia",
+    "desc": "Iconic symbol of American independence. Free, no tickets required.",
+    "source": "https://www.nps.gov/inde/",
+    "city": "Philadelphia",
+    "category": "history"
+  },
+  {
+    "title": "Philadelphia Museum of Art",
+    "date": "First Sunday of month, Wednesdays after 5pm",
+    "place": "2600 Benjamin Franklin Pkwy, Philadelphia",
+    "desc": "Pay-what-you-wish admission on First Sundays and Wednesday evenings. Famous for the 'Rocky Steps'.",
+    "source": "https://philamuseum.org/",
+    "city": "Philadelphia",
+    "category": "museum"
+  },
+  {
+    "title": "Reading Terminal Market",
+    "date": "Daily, 8am-6pm",
+    "place": "1136 Arch St, Philadelphia",
+    "desc": "Historic public market with dozens of food vendors. Free to enter, pay for food.",
+    "source": "https://readingterminalmarket.org/",
+    "city": "Philadelphia",
+    "category": "food"
+  },
+  {
     "title": "The Alamo",
     "date": "Daily, 9:00 AM-5:30 PM",
-    "place": "The Alamo, 300 Alamo Plaza, San Antonio",
+    "place": "300 Alamo Plaza, San Antonio",
     "desc": "Free admission to historic mission. Timed entry required.",
     "source": "https://www.thealamo.org/",
     "city": "San Antonio",
     "category": "history"
   },
   {
-    "title": "San Antonio Museum of Art - Free Tuesdays",
+    "title": "San Antonio River Walk",
+    "date": "Daily, 24 hours",
+    "place": "San Antonio River Walk, downtown",
+    "desc": "Free public walking paths along the river with shops, restaurants, and beautiful scenery.",
+    "source": "https://www.thesanantonioriverwalk.com/",
+    "city": "San Antonio",
+    "category": "park"
+  },
+  {
+    "title": "San Antonio Museum of Art",
     "date": "Tuesdays 4:00-9:00 PM",
-    "place": "San Antonio Museum of Art, 200 W Jones Ave",
-    "desc": "Free admission for all visitors on Tuesday evenings.",
+    "place": "200 W Jones Ave, San Antonio",
+    "desc": "Free admission on Tuesday evenings.",
     "source": "https://www.samuseum.org/",
     "city": "San Antonio",
     "category": "museum"
   },
   {
-    "title": "Balboa Park - Free Tuesdays",
-    "date": "Third Tuesday of month (rotating museums)",
+    "title": "Japanese Tea Garden",
+    "date": "Daily, sunrise to sunset",
+    "place": "3853 N St Mary's St, San Antonio",
+    "desc": "Free historic Japanese garden with ponds, bridges, and waterfalls.",
+    "source": "https://www.sanantonio.gov/",
+    "city": "San Antonio",
+    "category": "park"
+  },
+  {
+    "title": "Mission San José",
+    "date": "Daily, 9am-5pm",
+    "place": "6701 San José Dr, San Antonio",
+    "desc": "Part of San Antonio Missions National Historical Park. Free admission, run by National Park Service.",
+    "source": "https://www.nps.gov/saan/",
+    "city": "San Antonio",
+    "category": "history"
+  },
+  {
+    "title": "Balboa Park",
+    "date": "Daily, 24 hours",
     "place": "Balboa Park, San Diego",
-    "desc": "Rotating schedule: each Tuesday, different museums offer free admission to residents.",
+    "desc": "1,200-acre urban park with gardens, walking paths, and museums. Free access to grounds.",
     "source": "https://www.balboapark.org/",
     "city": "San Diego",
-    "category": "museum"
+    "category": "park"
   },
   {
     "title": "La Jolla Tide Pools",
@@ -198,75 +396,210 @@
     "category": "nature"
   },
   {
-    "title": "Dallas Museum of Art - Free Admission",
+    "title": "Mission Beach Boardwalk",
+    "date": "Daily, 24 hours",
+    "place": "Mission Beach, San Diego",
+    "desc": "Free access to beach and boardwalk. Belmont Park amusement area is also free to enter.",
+    "source": "https://www.sandiego.gov/",
+    "city": "San Diego",
+    "category": "beach"
+  },
+  {
+    "title": "Torrey Pines State Natural Reserve",
+    "date": "Daily, sunrise to sunset",
+    "place": "12600 N Torrey Pines Rd, San Diego",
+    "desc": "Free hiking trails with ocean views. Parking fee applies.",
+    "source": "https://torreypines.org/",
+    "city": "San Diego",
+    "category": "nature"
+  },
+  {
+    "title": "Cabrillo National Monument",
+    "date": "Daily, 9am-5pm",
+    "place": "1800 Cabrillo Memorial Dr, San Diego",
+    "desc": "Stunning views of the bay and ocean. Free with National Park pass.",
+    "source": "https://www.nps.gov/cabr/",
+    "city": "San Diego",
+    "category": "history"
+  },
+  {
+    "title": "Dallas Museum of Art",
     "date": "Daily",
-    "place": "DMA, 1717 N Harwood St, Dallas",
+    "place": "1717 N Harwood St, Dallas",
     "desc": "Permanent collection always free. Special exhibitions may have fee.",
     "source": "https://dma.org/",
     "city": "Dallas",
     "category": "museum"
   },
   {
-    "title": "Nasher Sculpture Center - Free First Saturdays",
-    "date": "First Saturday of month, 11:00 AM-5:00 PM",
-    "place": "Nasher Sculpture Center, 2001 Flora St, Dallas",
-    "desc": "Free admission for all visitors on the first Saturday of each month.",
+    "title": "Klyde Warren Park",
+    "date": "Daily, 6am-11pm",
+    "place": "2012 Woodall Rodgers Fwy, Dallas",
+    "desc": "Free park built over a highway with food trucks, activities, and green space.",
+    "source": "https://www.klydewarrenpark.org/",
+    "city": "Dallas",
+    "category": "park"
+  },
+  {
+    "title": "Nasher Sculpture Center",
+    "date": "First Saturday of month, 11am-5pm",
+    "place": "2001 Flora St, Dallas",
+    "desc": "Free admission on first Saturdays. World-class sculpture collection.",
     "source": "https://www.nashersculpturecenter.org/",
     "city": "Dallas",
     "category": "museum"
   },
   {
-    "title": "San Jose Museum of Art - Free First Sundays",
+    "title": "Dallas Arboretum",
+    "date": "Select free days in winter",
+    "place": "8525 Garland Rd, Dallas",
+    "desc": "Free admission during certain winter weekdays. Check website for dates.",
+    "source": "https://www.dallasarboretum.org/",
+    "city": "Dallas",
+    "category": "nature"
+  },
+  {
+    "title": "White Rock Lake",
+    "date": "Daily, 5am-10pm",
+    "place": "White Rock Lake, Dallas",
+    "desc": "Free access to lake trails and picnic areas. Popular for biking and walking.",
+    "source": "https://www.dallasparks.org/",
+    "city": "Dallas",
+    "category": "park"
+  },
+  {
+    "title": "San Jose Museum of Art",
     "date": "First Sunday of month",
-    "place": "San Jose Museum of Art, 110 S Market St",
+    "place": "110 S Market St, San Jose",
     "desc": "Free admission on first weekend of month.",
     "source": "https://sjmusart.org/",
     "city": "San Jose",
     "category": "museum"
   },
   {
-    "title": "Tech Museum - Free Days",
-    "date": "Select days (check website)",
-    "place": "The Tech Interactive, 201 S Market St, San Jose",
-    "desc": "Free admission to some exhibits on certain community days.",
-    "source": "https://www.thetech.org/",
+    "title": "Alum Rock Park",
+    "date": "Daily, 8am-sunset",
+    "place": "15350 Penitencia Creek Rd, San Jose",
+    "desc": "California's oldest municipal park. Free access to trails and mineral springs.",
+    "source": "https://www.sanjoseca.gov/",
     "city": "San Jose",
-    "category": "education"
+    "category": "park"
   },
   {
-    "title": "Blanton Museum of Art - Free Thursdays",
+    "title": "Rosicrucian Egyptian Museum",
+    "date": "2nd Saturday of month",
+    "place": "1660 Park Ave, San Jose",
+    "desc": "Free admission on second Saturdays. Largest collection of Egyptian artifacts in western US.",
+    "source": "https://egyptianmuseum.org/",
+    "city": "San Jose",
+    "category": "museum"
+  },
+  {
+    "title": "Municipal Rose Garden",
+    "date": "Daily, sunrise to sunset",
+    "place": "1649 Naglee Ave, San Jose",
+    "desc": "5-acre rose garden with over 3,500 rose bushes. Free admission.",
+    "source": "https://www.sanjoseca.gov/",
+    "city": "San Jose",
+    "category": "park"
+  },
+  {
+    "title": "Plaza de Cesar Chavez",
+    "date": "Daily, 24 hours",
+    "place": "1 Paseo de San Antonio, San Jose",
+    "desc": "Downtown park with fountains and events. Free to visit.",
+    "source": "https://www.sanjoseca.gov/",
+    "city": "San Jose",
+    "category": "park"
+  },
+  {
+    "title": "Zilker Park",
+    "date": "Daily, 5am-10pm",
+    "place": "2100 Barton Springs Rd, Austin",
+    "desc": "Free entry to Austin's most popular park. Home to Barton Springs Pool, hiking, and picnic areas.",
+    "source": "https://www.austintexas.gov/",
+    "city": "Austin",
+    "category": "park"
+  },
+  {
+    "title": "Barton Springs Pool",
+    "date": "Daily, 5am-8am free entry",
+    "place": "2201 Barton Springs Rd, Austin",
+    "desc": "Free early morning swimming in natural spring-fed pool from 5-8 AM daily.",
+    "source": "https://www.austintexas.gov/",
+    "city": "Austin",
+    "category": "sports"
+  },
+  {
+    "title": "Texas State Capitol",
+    "date": "Daily, 7am-10pm",
+    "place": "1100 Congress Ave, Austin",
+    "desc": "Free guided tours of the historic capitol building. Larger than US Capitol.",
+    "source": "https://www.tspb.texas.gov/",
+    "city": "Austin",
+    "category": "history"
+  },
+  {
+    "title": "Blanton Museum of Art",
     "date": "Thursdays",
-    "place": "Blanton Museum, 200 E Martin Luther King Jr Blvd, Austin",
+    "place": "200 E Martin Luther King Jr Blvd, Austin",
     "desc": "Free admission every Thursday. One of the best university art museums.",
     "source": "https://blantonmuseum.org/",
     "city": "Austin",
     "category": "museum"
   },
   {
-    "title": "Barton Springs Pool - Early Morning Free",
-    "date": "Daily, free 5:00-8:00 AM",
-    "place": "Barton Springs Pool, Zilker Park, Austin",
-    "desc": "Free early morning swimming in natural spring-fed pool. Entry fee applies after 8 AM.",
+    "title": "Lady Bird Lake Hike and Bike Trail",
+    "date": "Daily, 5am-10pm",
+    "place": "Lady Bird Lake, Austin",
+    "desc": "10-mile loop trail around lake with stunning city views. Free access.",
     "source": "https://www.austintexas.gov/",
     "city": "Austin",
-    "category": "sports"
+    "category": "outdoor"
   },
   {
-    "title": "Cummer Museum - Free Saturdays",
+    "title": "Cummer Museum",
     "date": "First Saturday of month",
-    "place": "Cummer Museum, 829 Riverside Ave, Jacksonville",
-    "desc": "Free admission with beautiful gardens and art collection.",
+    "place": "829 Riverside Ave, Jacksonville",
+    "desc": "Free admission on first Saturdays with beautiful gardens and art collection.",
     "source": "https://www.cummermuseum.org/",
     "city": "Jacksonville",
     "category": "museum"
   },
   {
     "title": "Jacksonville Beach",
-    "date": "Daily",
+    "date": "Daily, 24 hours",
     "place": "Jacksonville Beach",
     "desc": "Free access to one of Florida's best beaches. Parking fees may apply.",
     "source": "https://www.jacksonvillebeach.org/",
     "city": "Jacksonville",
     "category": "beach"
+  },
+  {
+    "title": "Riverside Arts Market",
+    "date": "Saturdays, 10am-3pm",
+    "place": "715 Riverside Ave, Jacksonville",
+    "desc": "Free outdoor market with local artists, food vendors, and live music.",
+    "source": "https://www.riversideartsmarket.com/",
+    "city": "Jacksonville",
+    "category": "market"
+  },
+  {
+    "title": "Museum of Contemporary Art",
+    "date": "First Wednesday of month",
+    "place": "333 N Laura St, Jacksonville",
+    "desc": "Free admission on first Wednesdays. Contemporary art exhibitions.",
+    "source": "https://mocajacksonville.unf.edu/",
+    "city": "Jacksonville",
+    "category": "museum"
+  },
+  {
+    "title": "Friendship Fountain",
+    "date": "Daily, 24 hours",
+    "place": "1015 Museum Cir, Jacksonville",
+    "desc": "Iconic fountain in St. Johns River Park. Free to view and picnic nearby.",
+    "source": "https://www.coj.net/",
+    "city": "Jacksonville",
+    "category": "park"
   }
 ]
